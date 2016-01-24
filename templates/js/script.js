@@ -32,6 +32,12 @@ $(document).ready(function(){
             }
         });
     });
+    $('#tag1,#tag2').keyup(function(e){
+        if(e.keyCode == 13)
+        {
+            $(this).siblings(".input-group-btn").find(".btn-success").click();
+        }
+    });
     $('body').on('click','#reload',function(){
         reload_data();
     });
