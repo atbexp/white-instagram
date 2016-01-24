@@ -1,0 +1,26 @@
+{
+  "name": "white-instagram",
+  "version": "1.0",
+  "description": "Php модуль. Ищет изображения в интаграмме по двум разным тегам и отдельно выводит пересечение двух результатов поиска. Написан на php+js. css сгенерирован с помощью compass.",
+  "author": "Вячеслав В <atbexp@gmail.com>",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atbexp/white-instagram"
+  },
+  "bugs": {
+    "url": "https://github.com/atbexp/white-instagram/issues"
+  },
+  "keywords": [
+    "instagram",
+    "search",
+    "tag",
+    "php",
+    "js"
+  ],
+  "dependencies": {
+    "jquery": "1.11.0",
+    "compass": "1.0.1",
+    "php": "5.6"
+  }
+}

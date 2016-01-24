@@ -1,0 +1,46 @@
+
+@import "icons/*.png";
+
+@include font-face("rublregular", font-files("rouble/rouble-webfont.ttf","rouble/rouble-webfont.woff","rouble/rouble-webfont.svg"),"rouble/rouble-webfont.eot", normal, normal);
+
+$icons: sprite-map("icons/*.png");
+
+$white                : #fff;
+$black                : #000;
+$light-gray           : #F1F1F2;
+$gray                 : #dddfe0;
+$semi-dark-gray       : #bcbdbf;
+$dark-gray            : #6d6e70;
+$bold-gray            : #4A4A49;
+
+
+$body_bg              : #e6e7e8;
+
+$selected_point_color : #ee6f35;
+$selected_menu_item   : #F6921E;
+
+@include font-face("futura", font-files("mf-futura-pt/mf-futura-pt-book.ttf","mf-futura-pt/mf-futura-pt-book.woff","mf-futura-pt/mf-futura-pt-book.woff2"),"mf-futura-pt/mf-futura-pt-book.eot", 400, normal);
+@include font-face("futura", font-files("mf-futura-pt/mf-futura-pt-book-oblique.ttf","mf-futura-pt/mf-futura-pt-book-oblique.woff","mf-futura-pt/mf-futura-pt-book-oblique.woff2"),"mf-futura-pt/mf-futura-pt-book-oblique.eot", 400, italic);
+@include font-face("futura", font-files("mf-futura-pt/mf-futura-pt-demi.ttf","mf-futura-pt/mf-futura-pt-demi.woff","mf-futura-pt/mf-futura-pt-demi.woff2"),"mf-futura-pt/mf-futura-pt-demi.eot", 700, normal);
+@include font-face("futura", font-files("mf-futura-pt/mf-futura-pt-demi-oblique.ttf","mf-futura-pt/mf-futura-pt-demi-oblique.woff","mf-futura-pt/mf-futura-pt-demi-oblique.woff2"),"mf-futura-pt/mf-futura-pt-demi-oblique.eot", 700, italic);
+@include font-face("attentica", font-files("attentica-4f/mf-attentica-4f-243296.ttf","attentica-4f/mf-attentica-4f-243296.woff","attentica-4f/mf-attentica-4f-243296.woff2"),"attentica-4f/mf-attentica-4f-243296.eot", 400, normal);
+
+$gradient-color: (
+  1           :( rgb(46,49,146), rgb(247,148,30) ),
+  2           :( rgb(238,232,9), rgb(75,94,170) ),
+  3           :( rgb(189,215,83), rgb(91,196,191) ),
+  4           :( rgb(241,173,54), rgb(219,88,142) ),
+  5           :( rgb(235,69,135), rgb(78,75,156) ),
+);
+
+
+$rubl: "rublregular";
+$futura: futura, sans serf;
+$attentica: attentica, sans serf;
+
+$padding-container: 170px;
+
+.rub{
+  font-family: $rubl;
+  text-transform: lowercase;
+}
