@@ -13,8 +13,16 @@ $(document).ready(function(){
         parent.find(".input-group-btn").addClass('hidden');
     });
     $('body').on('click','.input-group .btn-success',function(){
-        parent = $(this).parents('.input-group');
-        param[parent.find('input').attr('id')] = parent.find('input').val();
+        var parent = $(this).parents('.input-group');
+        var id = parent.find('input').attr('id');
+        var val = parent.find('input').val();
+        param[id] = val;
+        if ( val ){
+            $('a[href="#column_'+id+'_xs"').text('#'+val);
+        } else {
+            $('a[href="#column_'+id+'_xs"').text('#'+id);
+        }
+
         jQuery.ajax({
             type : "post",
             dataType : "json",
@@ -59,9 +67,11 @@ $(document).ready(function(){
 function use_response_data(response){
     if ( response.column_tag1 || response.column_tag1=='' || response.column_tag1==null ){
         $('#column_tag1').html(response.column_tag1);
+        $('#column_tag1_xs').html(response.column_tag1);
     }
     if ( response.column_tag2 || response.column_tag2=='' || response.column_tag2==null ){
         $('#column_tag2').html(response.column_tag2);
+        $('#column_tag2_xs').html(response.column_tag2);
     }
     cross_tag();
 }
@@ -102,6 +112,7 @@ function cross_tag(){
         for (var i=0; i<temp.length; i++)
         {
             $("div[data-id='"+temp[i]+"']").first().clone().prependTo("#cross_tags");
+            $("div[data-id='"+temp[i]+"']").first().clone().prependTo("#cross_tags_xs");
         }
     }
 }

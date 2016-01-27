@@ -1,6 +1,6 @@
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset";
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3";
-@import "../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites";
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/sprites";
 @import "bootstrap";
 //@import "my-variables" ;
 @import "my-mix";
@@ -11,6 +11,11 @@ body{
 
 #settings{
   padding: 20px 15px;
+  @include respond-to(xs){
+    .input-group{
+      padding-bottom: 20px;
+    }
+  }
 }
 
 #login{
@@ -71,7 +76,7 @@ body{
   }
   .insta-block-body{
     img{
-      max-width: 100%;
+      width: 100%;
     }
   }
   .insta-block-footer{

@@ -6,7 +6,7 @@ http_path = "/"
 css_dir = "templates/css"
 sass_dir = "templates/scss"
 images_dir = "templates/images"
-javascripts_dir = "templates/javascripts"
+javascripts_dir = "templates/js"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
